@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>surveycode</title>
+<link href="tribute CSS.css" rel="stylesheet" type="text/css">
+<link href="survey.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Family Guy Survey</h1>
+    <p id="description" class="description text-center">
+      Fill out Family Guy survey
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">&nbsp;</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Favorite family guy character?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select favorite character</option>
+        <option value="student">Peter Griffen</option>
+        <option value="job">Glenn Quagmire</option>
+        <option value="learner">Joe Swanson</option>
+        <option value="preferNo">Herbert</option>
+        <option value="other">Babs</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How often do you watch Family Guy a day?&nbsp;</p>
+      <label>
+      <input
+          name="user-recommend"
+          value="3 hours"
+          type="radio"
+          class="input-radio"
+          checked
+        />3 hours</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="6 hours"
+          type="radio"
+          class="input-radio"
+        />6 hours</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="9+ hours"
+          type="radio"
+          class="input-radio"
+        />9+ hours</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite seasons of Family Guy?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">season 1-2</option>
+        <option value="projects">season 3-4</option>
+        <option value="community">season 5-6</option>
+        <option value="openSource">season 7+ (i have a dangerously low IQ)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        would you like to see more seasons in the future?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="yes"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />yes</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="no Family guy is perfect as it is"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
